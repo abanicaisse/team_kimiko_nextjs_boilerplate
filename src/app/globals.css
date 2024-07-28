@@ -124,7 +124,8 @@
     transform: translateX(100%);
   }
 }
-.spinner_V8m1 {
+
+/* .spinner_V8m1 {
   transform-origin: center;
   animation: spinner_zKoa 2s linear infinite;
 }
@@ -132,11 +133,13 @@
   stroke-linecap: round;
   animation: spinner_YpZS 1.5s ease-in-out infinite;
 }
+
 @keyframes spinner_zKoa {
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes spinner_YpZS {
   0% {
     stroke-dasharray: 0 150;
@@ -151,7 +154,7 @@
     stroke-dasharray: 42 150;
     stroke-dashoffset: -59;
   }
-}
+} */
 
 .show_scrollbar::-webkit-scrollbar {
   height: 8px;
