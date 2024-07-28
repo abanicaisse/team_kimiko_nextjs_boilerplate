@@ -12,11 +12,20 @@ import {
 } from "~/components/ui/dropdown-menu";
 import { userData } from "../data/user-dummy-data";
 import DeleteDialog from "./dialogue/delete-dialog";
+import DeleteSuccessDialog from "./dialogue/delete-success-dialog";
 
 const UserTableBody = () => {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const handleOpenDialog = () => setIsDialogOpen(true);
-  const handleCloseDialog = () => setIsDialogOpen(false);
+  const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
+  const [isSuccessDeleteDialogOpen, setIsSuccessDeleteDialogOpen] =
+    useState(false);
+  const handleOpenDialog = () => setIsDeleteDialogOpen(true);
+  const handleCloseDialog = () => {
+    setIsDeleteDialogOpen(false);
+    setIsSuccessDeleteDialogOpen(true);
+  };
+  const handleCloseSuccessDeleteDialog = () => {
+    setIsSuccessDeleteDialogOpen(false);
+  };
 
   return (
     <>
@@ -107,7 +116,10 @@ const UserTableBody = () => {
           );
         })}
       </tbody>
-      {isDialogOpen && <DeleteDialog onClose={handleCloseDialog} />}
+      {isDeleteDialogOpen && <DeleteDialog onClose={handleCloseDialog} />}
+      {isSuccessDeleteDialogOpen && (
+        <DeleteSuccessDialog onClose={handleCloseSuccessDeleteDialog} />
+      )}
     </>
   );
 };
