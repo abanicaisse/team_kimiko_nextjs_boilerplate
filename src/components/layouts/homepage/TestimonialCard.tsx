@@ -30,10 +30,10 @@ const TestimonialCard = (properties: Properties) => {
         />
       </div>
 
-      <h4 className="font-inter mb-2 mt-2 text-lg font-semibold">
+      <h4 className="font-inter mb-2 mt-2 text-[16px] font-semibold">
         {properties?.name}
       </h4>
-      <small className="font-inter text-base font-normal">
+      <small className="font-inter text-[16px] font-normal">
         {properties?.stack}
       </small>
     </div>

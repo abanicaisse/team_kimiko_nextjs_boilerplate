@@ -4,7 +4,7 @@ const UserSection = () => {
   return (
     <div className="py-20 text-center md:py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="mb-9 text-3xl font-bold md:text-4xl">
+        <h1 className="mb-9 text-[25px] font-bold md:text-[35px]">
           More than 200 <span className="text-primary">Users</span> make use of
           our Boilerplate
         </h1>
