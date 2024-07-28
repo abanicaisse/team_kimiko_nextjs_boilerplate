@@ -17,11 +17,11 @@ const Hero = () => {
   //
 
   return (
-    <div className="py-14 sm:py-20">
+    <div className="py-14 sm:py-20 md:py-10">
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="flex flex-col items-center lg:flex-row">
-          <div className="w-full text-center sm:text-left lg:w-1/2">
-            <h1 className="mb-2 text-4xl font-bold leading-snug lg:text-5xl lg:leading-tight xl:text-6xl">
+          <div className="w-full text-center sm:text-left lg:mr-40 lg:w-1/2">
+            <h1 className="mb-2 text-4xl font-bold leading-snug lg:text-[45px] lg:leading-tight xl:text-[50px]">
               {`Focus on What Matters. We've Got the Foundation Covered.`}
             </h1>
 
@@ -30,12 +30,12 @@ const Hero = () => {
                 src="/images/hero-line.svg"
                 width={100}
                 height={100}
-                className="h-[50px] w-full"
+                className="h-[50px] w-full sm:w-[700px]"
                 alt=""
               />
             </div>
 
-            <p className="mb-8 mt-5 text-lg text-foreground md:mb-12 md:mt-7 md:text-xl">
+            <p className="mb-8 mt-4 text-lg text-foreground md:mb-12 md:mt-5 md:text-xl">
               Streamline your processes with a boilerplate built for efficiency
               and optimal productivity.
             </p>
