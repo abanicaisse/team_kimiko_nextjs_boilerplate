@@ -78,7 +78,7 @@ const Footer = () => {
               <h5 className="text-nuetral-dark-2 text-md mb-[34px] text-center font-bold sm:text-left">
                 Boiler plate
               </h5>
-              <p className="text-nuetral-dark-2 text-center text-[12px] font-medium sm:text-left">
+              <p className="text-nuetral-dark-2 text-center text-[16px] font-medium sm:text-left">
                 Logo subject details and address
               </p>
             </div>
@@ -110,7 +110,7 @@ const Footer = () => {
                         <li key={index}>
                           <Link
                             href={item.link}
-                            className="cursor-pointer text-sm text-neutral-dark-2 transition-colors duration-300 hover:text-primary hover:underline dark:text-white"
+                            className="cursor-pointer text-[16px] text-neutral-dark-2 transition-colors duration-300 hover:text-primary hover:underline dark:text-white"
                           >
                             {item.route}
                           </Link>
